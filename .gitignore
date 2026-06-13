@@ -1,0 +1,38 @@
+# Maven
+target/
+*.jar
+*.war
+*.ear
+*.nar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Java
+*.class
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Documentation - built files
+docs/_build/
+*.pdf
+
+# Test files
+output/
+*.mp4
+*.wav
+*.jpg
