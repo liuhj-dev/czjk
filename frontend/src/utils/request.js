@@ -1,0 +1,18 @@
+import axios from 'axios'
+
+const request = axios.create({
+  baseURL: '/api',
+  timeout: 30000,
+  headers: { 'Content-Type': 'application/json' }
+})
+
+request.interceptors.response.use(
+  (response) => response.data,
+  (error) => {
+    const msg = error.response?.data?.message || error.message || '请求失败'
+    ElMessage.error(msg)
+    return Promise.reject(error)
+  }
+)
+
+export default request
