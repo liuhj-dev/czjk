@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+recording:
+  output-dir: ./output
+  default-video-width: 1280
+  default-video-height: 720
+  default-frame-rate: 30
+  default-video-bitrate: 2500000
+  default-audio-sample-rate: 44100
+  default-audio-channels: 2
+  default-audio-bitrate: 128000
